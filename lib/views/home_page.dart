@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hive/views/new_screen.dart';
 import 'package:hive/hive.dart';
 
-import '../main.dart';
 
 class MyHomePage extends StatefulWidget {
   final String title;
@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 print(appbox.get("c"));
                 Navigator.push(
     context,
-    MaterialPageRoute(builder: (context) => NEWSCREEN()),
+    MaterialPageRoute(builder: (context) => NewScreen()),
   );
               },
               child: Text("Show"),
