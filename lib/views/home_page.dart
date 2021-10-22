@@ -4,19 +4,19 @@ import 'package:hive/hive.dart';
 
 
 class MyHomePage extends StatefulWidget {
-  final String title;
+  final String? title;
   MyHomePage({this.title});
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  Box appbox;
-  String title;
+  late Box appbox;
+  String? title;
   final TextEditingController idController = TextEditingController();
 
   final TextEditingController nameController = TextEditingController();
-  String name = "abc";
+  String? name = "abc";
   @override
   void initState() {
     title = widget.title;
